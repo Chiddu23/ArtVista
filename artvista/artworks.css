@@ -1,0 +1,243 @@
+/* Custom Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #033f02;
+    color: #e8f1b6;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: hsl(69, 77%, 76%);
+    text-decoration: none;
+    font-size: 22px;
+}
+/* 
+.nav-link:hover {
+    text-decoration: underline;
+} */
+
+.hero-section {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #555;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.gallery-section {
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.artwork-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.artwork-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+    height: 300px;
+    width: 400px;
+}
+
+.artwork-card .image-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+
+.artwork-card:hover img {
+    transform: scale(1.1);
+}
+
+.artwork-card:hover .image-info {
+    opacity: 1;
+}
+
+.artwork-card h5 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.artwork-card p {
+    color: #ddd;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.artist-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+.footer {
+    background-color: #3f3939;
+    color: #edba21;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.artist-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.artist-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.artworks-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+}
+
+.artworks-gallery img {
+    width: 350px;
+    height: 300px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+
+.artwork p.artwork-name {
+  font-size: 18px;
+  margin-top: 0;
+  text-align: center;
+}
+.artworks-gallery img:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80%;
+}
+
+.modal-image-reduced {
+    max-width: 80%;
+    max-height: 80%;
+    margin-top: 100px;
+}
+
+.close {
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

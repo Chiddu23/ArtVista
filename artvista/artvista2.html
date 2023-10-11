@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtVista - Virtual Art Gallery</title>
+    <link rel="stylesheet" href="art.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {
+    display: none;
+    object-fit:fill;
+    width: 100%;
+    height: 400px; /* Adjust the height as desired */
+}
+        .w3-content {
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a class="navbar-brand" href="artvista2.html">ArtVista</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="artvista2.html">
+                        <i class="fa fa-home" style="font-size: 24px;"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="artist.html">Artists</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="artworks.html">Artworks</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>Welcome to ArtVista</h1>
+                <p class="hero-subtitle">Explore, Engage, and Experience the World of Art</p>
+                <p class="hero-description">ArtVista is your gateway to a captivating digital art gallery. Discover a curated collection of diverse artworks, engage with fellow art enthusiasts, and immerse yourself in the transformative power of art. Experience the beauty, creativity, and inspiration at ArtVista.</p>
+            </div>
+        </section>
+        <!-- Slideshow -->
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src="slideshow/pic1.jpg" style="width:100%">
+            <img class="mySlides" src="slideshow/pic2.jpg" style="width:100%">
+            <img class="mySlides" src="slideshow/pic3.jpg" style="width:100%">
+            <img class="mySlides" src="slideshow/pic4.jpg" style="width:100%">
+          
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+        <!-- Gallery Section -->
+        <br>
+        <h2 style="text-align: center;">Our Recent Favourites</h2>
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery">
+                    <div class="artwork-card">
+                        <img src="slideshow\van-gogh-irises.jpg" alt="Artwork 1">
+                        <div class="image-info">
+                            <h5>Irises (May 1890)
+                            </h5>
+                            <p>The evening before van Gogh checked himself out of the Saint-Rémy psychiatric hospital, where he stayed for 374 days from 8 May 1889 to 16 May 1890, he painted four still life works of flowers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="artwork-card">
+                        <img src="slideshow\1280px-van-gogh-starry-night-google-art-project.webp" alt="Artwork 2">
+                        <div class="image-info">
+                            <h5>Storm on the Sea of Galilee</h5>
+                            <p>Storm on the Sea of Galilee was a piece of art painted in 1633, by the Dutch Golden Age painter Rembrandt van Rijn.</p>
+                        </div>
+                    </div>
+                    <div class="artwork-card">
+                        <img src="artvista_images\most-famous-paintings-20.jpg" alt="Artwork 3">
+                        <div class="image-info">
+                            <h5>Dogs Playing Poker</h5>
+                            <p>"Dogs Playing Poker" is a famous series of paintings created by Cassius Marcellus Coolidge in the early 1900s. The artwork portrays a group of anthropomorphic dogs engaging in a friendly game of poker, showcasing their humorous and relatable expressions.</p>
+                        </div>
+                    </div>
+                    <!-- Add more artwork cards here -->
+                </div>
+            </div>
+        </section>
+        <!-- Locations Section -->
+        <section class="locations-section">
+            <div class="container">
+                <h2>Our Locations</h2>
+                <div class="location-card">
+                    <div class="location-item">
+                        <h4>ArtVista Gallery</h4>
+                        <p>123 Main Street, City</p>
+                        <p>Phone: 123-456-7890</p>
+                    </div>
+                    <div class="location-item">
+                        <h4>ArtVista Studio</h4>
+                        <p>456 Elm Street, City</p>
+                        <p>Phone: 987-654-3210</p>
+                    </div>
+                    <!-- Add more location items here -->
+                </div>
+            </div>
+        </section>
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                    <form id="contactForm" action="" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                    <div id="successMessage" class="success-message"></div>
+                    <div id="errorMessage" class="error-message"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 ArtVista. All rights reserved.</p>
+            <ul class="social-icons">
+                <li><a href=""><i class="fa fa-facebook-square" style="font-size:48px;color:rgb(99, 196, 238)"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram" style="font-size:48px;color:rgb(231, 43, 178)"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter" style="font-size:48px;color:rgb(38, 165, 220)"></i></a></li>
+            </ul>
+            <p class="contact-info">
+                Support Email: support@artvista.com<br>
+                Phone: +1 123 456 7890
+            </p>
+        </div>
+    </footer>
+    <script>
+        var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+    </script>
+</body>
+</html>

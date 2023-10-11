@@ -1,0 +1,253 @@
+/* Custom Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #033f02;
+    color: #e8f1b6;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end; /* Align navigation links to the right */
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: hsl(69, 77%, 76%);
+    text-decoration: none;
+    font-size: 22px;
+}
+
+/* .nav-link:hover {
+    text-decoration: underline;
+} */
+.hero-section {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #555;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.gallery-section {
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.artwork-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.artwork-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+    height: 300px;
+    width: 400px;
+}
+
+.artwork-card .image-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+
+.artwork-card:hover img {
+    transform: scale(1.1);
+}
+
+.artwork-card:hover .image-info {
+    opacity: 1;
+}
+
+.artwork-card h5 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.artwork-card p {
+    color: #ddd;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.footer {
+    background-color: #3f3939;
+    color: #edba21;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Contact us */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form button {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #d32f2f;
+}
+
+.contact-form .success-message {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-form .error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* Fluid CSS for the Locations section */
+.locations-section {
+    background-color: #f9f9f9;
+    padding: 5% 10%;
+    text-align: center;
+  }
+  
+  .locations-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .locations-section .location-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .locations-section .location-card .location-item {
+    flex: 1 1 30rem;
+    max-width: 30rem;
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  
+  .locations-section .location-card .location-item h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .locations-section .location-card .location-item p {
+    margin-bottom: 1.5rem;
+  }
+  

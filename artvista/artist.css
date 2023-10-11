@@ -1,0 +1,117 @@
+/* Custom Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #033f02;
+    color: #e8f1b6;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: hsl(69, 77%, 76%);
+    text-decoration: none;
+    font-size: 22px;
+}
+
+/* .nav-link:hover {
+    text-decoration: underline;
+} */
+
+.footer {
+    background-color: #3f3939;
+    color: #edba21;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Artist */
+.artist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .artist-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .artist-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .artist-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .artist-description {
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: justify;
+  }
+  
+  .read-more-btn {
+    display: inline-block;
+    background-color: #ccc;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 3px;
+  }
